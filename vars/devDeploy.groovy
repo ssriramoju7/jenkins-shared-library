@@ -1,4 +1,4 @@
-def call(){
+def call(businessGroupName){
 
 node{
     
@@ -6,6 +6,7 @@ node{
         
         def abc = commonUtils.deployApplication()
         println('Sucess')
+        println("Business Group name is : " + businessGroupName)
     }
 
     stage('test1') {
@@ -13,6 +14,7 @@ node{
     	def a = 1
     	def b = 2
     	def abc =commonUtils.testApp(a, b)
+    	println("Business Group name is second time : " + businessGroupName)
     }
 }
 }
