@@ -1,3 +1,5 @@
+def call(a, b){
+
 node{
     
     stage("test") {
@@ -12,4 +14,5 @@ node{
     	def b = 2
     	def abc =commonUtils.testApp(a, b)
     }
+}
 }
