@@ -1,4 +1,4 @@
-def call(a, b){
+def call(){
 
 node{
     
