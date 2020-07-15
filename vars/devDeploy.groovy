@@ -2,7 +2,7 @@ def call(){
 
 node{
     
-    stage("test") {
+    stage("dev") {
         
         def abc = commonUtils.deployApplication()
         println('Sucess')
