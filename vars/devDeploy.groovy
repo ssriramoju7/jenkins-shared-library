@@ -7,6 +7,8 @@ node{
         def abc = commonUtils.deployApplication()
         println('Sucess')
         println("Business Group name is :${params.businessGroupName}")
+        println("Test")
+        println(businessGroupName)
     }
 
     stage('test1') {
